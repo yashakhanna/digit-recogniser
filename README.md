@@ -1,4 +1,4 @@
-# digit-recogniser
+
 # Handwritten Digit Recognizer
 
 This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset. It includes training the model, deploying it as a web API using Flask, and deploying it on Heroku for easy access.
