@@ -1,33 +1,29 @@
+# MNIST Digit Recognition
 
-# Handwritten Digit Recognizer
+This repository contains a Convolutional Neural Network (CNN) model trained on the MNIST dataset for digit recognition.
 
-### About Handwritten Digits
+## Files
 
-Handwritten digits recognition is a fundamental problem in the field of machine learning and computer vision. The MNIST dataset, used extensively in this project, consists of 60,000 training images and 10,000 test images of handwritten digits from 0 to 9. Each image is grayscale and 28x28 pixels in size.
+- `mnist_cnn_model.h5`: The trained model.
+- `mnist_inference.py`: Script to load the model and predict digits from images.
+- `requirements.txt`: Required Python packages.
 
-The goal of this project is to train a Convolutional Neural Network (CNN) model to accurately classify these handwritten digits. CNNs are particularly effective for image classification tasks due to their ability to learn hierarchical features directly from pixel data.
+## Installation
 
-The MNIST dataset has been a benchmark for evaluating machine learning models for decades, providing a standard dataset for researchers and practitioners to compare and improve algorithms for handwritten digit recognition. By deploying this model as a web service, users can easily interact with it, uploading images of handwritten digits to receive real-time predictions.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/haffy1/digit.git
+    cd digit
+    ```
 
-This project demonstrates how machine learning can be applied to recognize and classify handwritten digits, showcasing the practical applications of deep learning in image recognition tasks.
+2. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-## OUR GOAL
+## Usage
 
-Our goal is to correctly identify digits from a dataset of tens of thousands of handwritten images. We’ve curated a set of tutorial-style kernels which cover everything from regression to neural networks. We encourage you to experiment with different algorithms to learn first-hand what works well and how techniques compare.
+Run the inference script with the path to an image:
+```sh
+python mnist_inference.py "C:\Users\dhill\Downloads\MNIST Dataset JPG format\MNIST Dataset JPG format\MNIST - JPG - training\7\9788.jpg"
 
-
-## Features
-
-- **CNN Model:** Trains a TensorFlow/Keras CNN on the MNIST dataset.
-- **Flask API:** Provides a web API endpoint for real-time predictions.
-- **Heroku Deployment:** Hosts the model as a web service on Heroku.
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- Install required libraries:
-
-  ```bash
-  pip install -r requirements.txt
